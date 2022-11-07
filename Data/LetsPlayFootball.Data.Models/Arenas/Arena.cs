@@ -28,6 +28,8 @@
         [MaxLength(2000)]
         public string Description { get; set; }
 
+        public ArenaStatus Status { get; set; }
 
+        // TODO add navigation properties
     }
 }
