@@ -10,9 +10,6 @@
         [MaxLength(100)]
         public string AddressInformation { get; set; }
 
-        [Required]
-        public int ArenaId { get; set; }
-
         public virtual Arena Arena { get; set; }
 
         [Required]
