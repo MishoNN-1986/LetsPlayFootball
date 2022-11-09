@@ -1,5 +1,6 @@
 ﻿namespace LetsPlayFootball.Data.Models.Arenas
 {
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
     using LetsPlayFootball.Data.Common.Models;
@@ -29,6 +30,8 @@
         public int AddressId { get; set; }
 
         public virtual Address Address { get; set; }
+
+        public virtual ICollection<WorkTime> WorkTimes { get; set; } = new HashSet<WorkTime>();
 
         // TODO add navigation properties
     }
