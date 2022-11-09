@@ -20,6 +20,6 @@
         [Required]
         public int ArenaId { get; set; }
 
-        public Arena Arena { get; set; }
+        public virtual Arena Arena { get; set; }
     }
 }
