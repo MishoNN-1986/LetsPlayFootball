@@ -31,7 +31,13 @@
 
         public virtual Address Address { get; set; }
 
+        public string MainImageId { get; set; }
+
+        public virtual Image MainImage { get; set; }
+
         public virtual ICollection<WorkTime> WorkTimes { get; set; } = new HashSet<WorkTime>();
+
+        public virtual ICollection<Image> Images { get; set; } = new HashSet<Image>();
 
         // TODO add navigation properties
     }
