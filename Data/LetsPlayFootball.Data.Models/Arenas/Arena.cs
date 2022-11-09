@@ -1,11 +1,6 @@
 ﻿namespace LetsPlayFootball.Data.Models.Arenas
 {
-    using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     using LetsPlayFootball.Data.Common.Models;
 
@@ -29,6 +24,11 @@
         public string Description { get; set; }
 
         public ArenaStatus Status { get; set; }
+
+        [Required]
+        public int AddressId { get; set; }
+
+        public virtual Address Address { get; set; }
 
         // TODO add navigation properties
     }
