@@ -4,6 +4,7 @@
 
     using LetsPlayFootball.Data.Common.Models;
     using LetsPlayFootball.Data.Models.Arenas;
+    using LetsPlayFootball.Data.Models.Fields;
 
     public class Image : BaseDeletableModel<string>
     {
@@ -22,6 +23,8 @@
 
         public virtual ApplicationUser User { get; set; }
 
-        // TODO Add Field
+        public int? FieldId { get; set; }
+
+        public virtual Field Field { get; set; }
     }
 }
