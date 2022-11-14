@@ -8,7 +8,7 @@
     public class Rating : BaseModel<int>
     {
         [Required]
-        [Range(typeof(int), "0", "5")]
+        [Range(typeof(int), "1", "5")]
         public int RatingValue { get; set; }
 
         [MaxLength(1000)]
