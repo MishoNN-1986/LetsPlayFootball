@@ -4,6 +4,7 @@
     using System.ComponentModel.DataAnnotations;
 
     using LetsPlayFootball.Data.Common.Models;
+    using LetsPlayFootball.Data.Models.Users;
 
     public class Arena : BaseDeletableModel<int>
     {
@@ -30,6 +31,10 @@
         public int AddressId { get; set; }
 
         public virtual Address Address { get; set; }
+
+        public int ArenaOwnerId { get; set; }
+
+        public virtual ApplicationUser ArenaOwner { get; set; }
 
         public string MainImageId { get; set; }
 
