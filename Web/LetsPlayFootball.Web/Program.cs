@@ -6,6 +6,7 @@
     using LetsPlayFootball.Data.Common;
     using LetsPlayFootball.Data.Common.Repositories;
     using LetsPlayFootball.Data.Models;
+    using LetsPlayFootball.Data.Models.Users;
     using LetsPlayFootball.Data.Repositories;
     using LetsPlayFootball.Data.Seeding;
     using LetsPlayFootball.Services.Data;

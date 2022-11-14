@@ -22,5 +22,9 @@
   <ItemGroup>
     <ProjectReference Include="..\LetsPlayFootball.Data.Common\LetsPlayFootball.Data.Common.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Mappings\" />
+  </ItemGroup>
   
 </Project>

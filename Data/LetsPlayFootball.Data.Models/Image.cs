@@ -5,6 +5,7 @@
     using LetsPlayFootball.Data.Common.Models;
     using LetsPlayFootball.Data.Models.Arenas;
     using LetsPlayFootball.Data.Models.Fields;
+    using LetsPlayFootball.Data.Models.Users;
 
     public class Image : BaseDeletableModel<string>
     {

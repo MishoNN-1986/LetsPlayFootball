@@ -1,6 +1,6 @@
 ﻿namespace LetsPlayFootball.Data.Configurations
 {
-    using LetsPlayFootball.Data.Models;
+    using LetsPlayFootball.Data.Models.Users;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

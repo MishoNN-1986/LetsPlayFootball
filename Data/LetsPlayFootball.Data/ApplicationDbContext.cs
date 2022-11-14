@@ -8,7 +8,7 @@
 
     using LetsPlayFootball.Data.Common.Models;
     using LetsPlayFootball.Data.Models;
-
+    using LetsPlayFootball.Data.Models.Users;
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
 

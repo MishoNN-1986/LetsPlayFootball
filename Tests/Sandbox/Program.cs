@@ -20,6 +20,7 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
+    using LetsPlayFootball.Data.Models.Users;
 
     public static class Program
     {
