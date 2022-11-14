@@ -25,6 +25,7 @@
         [MaxLength(2000)]
         public string Description { get; set; }
 
+        // public decimal AverageRating { get; set; }
         public ArenaStatus Status { get; set; }
 
         [Required]
@@ -48,6 +49,6 @@
 
         public virtual ICollection<Image> Images { get; set; } = new HashSet<Image>();
 
-        // TODO add navigation properties
+        public virtual ICollection<Rating> Ratings { get; set; } = new HashSet<Rating>();
     }
 }
