@@ -1,4 +1,4 @@
-﻿namespace LetsSport.Data.Models.Users
+﻿namespace LetsPlayFootball.Data.Models.Users
 {
     using System.ComponentModel.DataAnnotations;
 
