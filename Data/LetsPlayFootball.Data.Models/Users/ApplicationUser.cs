@@ -6,7 +6,7 @@ namespace LetsPlayFootball.Data.Models.Users
     using System.Collections.Generic;
 
     using LetsPlayFootball.Data.Common.Models;
-
+    using LetsPlayFootball.Data.Models.Arenas;
     using Microsoft.AspNetCore.Identity;
 
     public class ApplicationUser : IdentityUser, IAuditInfo, IDeletableEntity
@@ -34,5 +34,7 @@ namespace LetsPlayFootball.Data.Models.Users
         public virtual ICollection<IdentityUserClaim<string>> Claims { get; set; }
 
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; set; }
+
+        public virtual Arena AdministratingArena { get; set; }
     }
 }
