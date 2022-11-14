@@ -35,6 +35,10 @@
 
         public virtual Image MainImage { get; set; }
 
+        public int FeaturesId { get; set; }
+
+        public virtual Features Features { get; set; }
+
         public virtual ICollection<WorkTime> WorkTimes { get; set; } = new HashSet<WorkTime>();
 
         public virtual ICollection<Image> Images { get; set; } = new HashSet<Image>();
