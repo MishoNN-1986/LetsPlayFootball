@@ -4,6 +4,7 @@ namespace LetsPlayFootball.Data.Models.Users
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
 
     using LetsPlayFootball.Data.Common.Models;
     using LetsPlayFootball.Data.Models.Arenas;
@@ -13,10 +14,10 @@ namespace LetsPlayFootball.Data.Models.Users
     {
         public ApplicationUser()
         {
-            Id = Guid.NewGuid().ToString();
-            Roles = new HashSet<IdentityUserRole<string>>();
-            Claims = new HashSet<IdentityUserClaim<string>>();
-            Logins = new HashSet<IdentityUserLogin<string>>();
+            this.Id = Guid.NewGuid().ToString();
+            this.Roles = new HashSet<IdentityUserRole<string>>();
+            this.Claims = new HashSet<IdentityUserClaim<string>>();
+            this.Logins = new HashSet<IdentityUserLogin<string>>();
         }
 
         // Audit info
@@ -35,6 +36,38 @@ namespace LetsPlayFootball.Data.Models.Users
 
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; set; }
 
-        public virtual Arena AdministratingArena { get; set; }
+        // Additional info
+        [MaxLength(50)]
+        public string FirstName { get; set; }
+
+        [MaxLength(50)]
+        public string LastName { get; set; }
+
+        public int? Age { get; set; }
+
+        public Gender? Gender { get; set; }
+
+        public UserStatus? Status { get; set; }
+
+        [MaxLength(200)]
+        public string FaceBookAccount { get; set; }
+
+        public bool IsUserProfileUpdated { get; set; }
+
+        // public decimal AverageRating { get; set; }
+        // nav props
+        public int AddressId { get; set; }
+
+        public string AvatarId { get; set; }
+
+        public Image Avatar { get; set; }
+
+        public virtual Rating Rating { get; set; }
+
+        public virtual Address Address { get; set; }
+
+        public virtual ICollection<Arena> Arenas { get; set; } = new HashSet<Arena>();
+
+        public virtual ICollection<Rating> ReceivedRatings { get; set; } = new HashSet<Rating>();
     }
 }
