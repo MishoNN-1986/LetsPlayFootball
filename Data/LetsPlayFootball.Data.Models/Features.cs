@@ -1,8 +1,10 @@
 ﻿namespace LetsPlayFootball.Data.Models
 {
+    using System.Collections.Generic;
+
     using LetsPlayFootball.Data.Common.Models;
     using LetsPlayFootball.Data.Models.Arenas;
-    using System.Collections.Generic;
+    using LetsPlayFootball.Data.Models.Fields;
 
     public class Features : BaseModel<int>
     {
@@ -25,6 +27,7 @@
         public virtual Arena Arena { get; set; }
 
         public virtual ICollection<Restaurant> Restaurants { get; set; } = new HashSet<Restaurant>();
-        // TODO add navigation properties
+
+        public virtual ICollection<Field> Fields { get; set; } = new HashSet<Field>();
     }
 }
