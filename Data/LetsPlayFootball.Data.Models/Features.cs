@@ -1,6 +1,8 @@
 ﻿namespace LetsPlayFootball.Data.Models
 {
     using LetsPlayFootball.Data.Common.Models;
+    using LetsPlayFootball.Data.Models.Arenas;
+    using System.Collections.Generic;
 
     public class Features : BaseModel<int>
     {
@@ -18,6 +20,11 @@
 
         public bool Bench { get; set; }
 
+        public int ArenaId { get; set; }
+
+        public virtual Arena Arena { get; set; }
+
+        public virtual ICollection<Restaurant> Restaurants { get; set; } = new HashSet<Restaurant>();
         // TODO add navigation properties
     }
 }
