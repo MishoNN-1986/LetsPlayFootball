@@ -28,6 +28,8 @@
         [MaxLength(2000)]
         public string AdditionalInfo { get; set; }
 
+        public RequestStatus RequestStatus { get; set; }
+
         public int ArenaId { get; set; }
 
         public virtual Arena Arena { get; set; }
@@ -37,5 +39,7 @@
         public virtual Field Field { get; set; }
 
         public virtual ICollection<ApplicationUser> Users { get; set; } = new HashSet<ApplicationUser>();
+
+        public virtual ICollection<EventMessage> Messages { get; set; } = new HashSet<EventMessage>();
     }
 }
