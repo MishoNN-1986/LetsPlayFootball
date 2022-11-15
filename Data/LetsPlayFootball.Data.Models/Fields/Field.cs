@@ -5,6 +5,7 @@
 
     using LetsPlayFootball.Data.Common.Models;
     using LetsPlayFootball.Data.Models.Arenas;
+    using LetsPlayFootball.Data.Models.Events;
 
     public class Field : BaseDeletableModel<int>
     {
@@ -40,5 +41,7 @@
         public virtual Features Features { get; set; }
 
         public virtual ICollection<Image> Images { get; set; } = new HashSet<Image>();
+
+        public virtual ICollection<Event> Events { get; set; } = new HashSet<Event>();
     }
 }
