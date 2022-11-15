@@ -4,6 +4,7 @@
     using System.ComponentModel.DataAnnotations;
 
     using LetsPlayFootball.Data.Common.Models;
+    using LetsPlayFootball.Data.Models.Events;
     using LetsPlayFootball.Data.Models.Users;
 
     public class Arena : BaseDeletableModel<int>
@@ -50,5 +51,7 @@
         public virtual ICollection<Image> Images { get; set; } = new HashSet<Image>();
 
         public virtual ICollection<Rating> Ratings { get; set; } = new HashSet<Rating>();
+
+        public virtual ICollection<Event> Events { get; set; } = new HashSet<Event>();
     }
 }
