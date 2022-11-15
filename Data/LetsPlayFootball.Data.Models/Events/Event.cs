@@ -7,6 +7,7 @@
     using LetsPlayFootball.Data.Common.Models;
     using LetsPlayFootball.Data.Models.Arenas;
     using LetsPlayFootball.Data.Models.Fields;
+    using LetsPlayFootball.Data.Models.Mappings;
     using LetsPlayFootball.Data.Models.Users;
 
     public class Event : BaseModel<int>
@@ -38,7 +39,7 @@
 
         public virtual Field Field { get; set; }
 
-        public virtual ICollection<ApplicationUser> Users { get; set; } = new HashSet<ApplicationUser>();
+        public virtual ICollection<EventUser> Users { get; set; } = new HashSet<EventUser>();
 
         public virtual ICollection<EventMessage> Messages { get; set; } = new HashSet<EventMessage>();
     }
