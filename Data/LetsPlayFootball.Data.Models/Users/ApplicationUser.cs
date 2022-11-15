@@ -8,6 +8,7 @@ namespace LetsPlayFootball.Data.Models.Users
 
     using LetsPlayFootball.Data.Common.Models;
     using LetsPlayFootball.Data.Models.Arenas;
+    using LetsPlayFootball.Data.Models.Events;
     using Microsoft.AspNetCore.Identity;
 
     public class ApplicationUser : IdentityUser, IAuditInfo, IDeletableEntity
@@ -69,5 +70,7 @@ namespace LetsPlayFootball.Data.Models.Users
         public virtual ICollection<Arena> Arenas { get; set; } = new HashSet<Arena>();
 
         public virtual ICollection<Rating> ReceivedRatings { get; set; } = new HashSet<Rating>();
+
+        public virtual ICollection<Event> Events { get; set; } = new HashSet<Event>();
     }
 }
