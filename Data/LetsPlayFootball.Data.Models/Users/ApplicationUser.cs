@@ -79,5 +79,7 @@ namespace LetsPlayFootball.Data.Models.Users
         public virtual ICollection<PrivateMessage> SendedMessages { get; set; } = new HashSet<PrivateMessage>();
 
         public virtual ICollection<PrivateMessage> ReceivedMessages { get; set; } = new HashSet<PrivateMessage>();
+
+        public virtual ICollection<PlayerJoinRequest> PlayerJoinRequests { get; set; } = new HashSet<PlayerJoinRequest>();
     }
 }
