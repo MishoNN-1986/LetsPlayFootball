@@ -42,5 +42,7 @@
         public virtual ICollection<EventUser> Users { get; set; } = new HashSet<EventUser>();
 
         public virtual ICollection<EventMessage> Messages { get; set; } = new HashSet<EventMessage>();
+
+        public virtual ICollection<PlayerDemand> PlayerDemands { get; set; } = new HashSet<PlayerDemand>();
     }
 }
