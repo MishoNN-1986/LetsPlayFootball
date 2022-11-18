@@ -17,7 +17,7 @@
         public GameFormat GameFormat { get; set; }
 
         [Required]
-        public DayOfWeek Day { get; }
+        public DateTime Day { get; }
 
         [Required]
         public DateTime StartingHour { get; set; }
@@ -28,6 +28,10 @@
 
         [MaxLength(2000)]
         public string AdditionalInfo { get; set; }
+
+        public int UserId { get; set; }
+
+        public virtual ApplicationUser User { get; set; }
 
         public RequestStatus RequestStatus { get; set; }
 
