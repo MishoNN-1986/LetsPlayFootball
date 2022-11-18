@@ -56,7 +56,6 @@ namespace LetsPlayFootball.Data.Models.Users
 
         public bool IsUserProfileUpdated { get; set; }
 
-        // public decimal AverageRating { get; set; }
         // nav props
         public int AddressId { get; set; }
 

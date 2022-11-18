@@ -26,7 +26,6 @@
         [MaxLength(2000)]
         public string Description { get; set; }
 
-        // public decimal AverageRating { get; set; }
         public ArenaStatus Status { get; set; }
 
         [Required]
