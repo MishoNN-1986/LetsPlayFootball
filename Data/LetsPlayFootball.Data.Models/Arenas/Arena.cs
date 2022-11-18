@@ -42,7 +42,7 @@
 
         public virtual Image MainImage { get; set; }
 
-        public int FeaturesId { get; set; }
+        public int? FeaturesId { get; set; }
 
         public virtual Features Features { get; set; }
 

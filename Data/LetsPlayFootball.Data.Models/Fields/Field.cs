@@ -36,7 +36,7 @@
 
         public virtual FieldSize Size { get; set; }
 
-        public int FeaturesId { get; set; }
+        public int? FeaturesId { get; set; }
 
         public virtual Features Features { get; set; }
 

@@ -21,13 +21,5 @@
         public bool Parking { get; set; }
 
         public bool Bench { get; set; }
-
-        public int ArenaId { get; set; }
-
-        public virtual Arena Arena { get; set; }
-
-        public virtual ICollection<Restaurant> Restaurants { get; set; } = new HashSet<Restaurant>();
-
-        public virtual ICollection<Field> Fields { get; set; } = new HashSet<Field>();
     }
 }
