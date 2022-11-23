@@ -9,7 +9,7 @@
     public class WorkTime : BaseModel<int>
     {
         [Required]
-        public DayOfWeek Day { get; }
+        public DayOfWeek Day { get; set; }
 
         [Required]
         public string StartTime { get; set; }
