@@ -52,5 +52,7 @@
         public virtual ICollection<Rating> Ratings { get; set; } = new HashSet<Rating>();
 
         public virtual ICollection<Event> Events { get; set; } = new HashSet<Event>();
+
+        public virtual ICollection<Restaurant> Restaurants { get; set; } = new HashSet<Restaurant>();
     }
 }
