@@ -14,9 +14,7 @@
             this.Id = Guid.NewGuid().ToString();
         }
 
-        public string Url { get; set; }
-
-        // public string ImageContent { get; set; }
+        public string ImageContent { get; set; }
 
         public int? ArenaId { get; set; }
 
